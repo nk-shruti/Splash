@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+
+
+<style>
+body,html
+{
+font-family:sans-serif;
+
+}
+#tb
+{
+padding-top: 9px;
+position:fixed;
+top:0px;
+width:100%;
+height:50px;
+background:#2f2f2f;
+color:white;
+
+}
+#val
+{
+margin-top: 5px;
+margin-left: 75px;
+
+position:absolute;
+
+
+}
+#add
+{
+margin-left: 30px;
+height: 30px;
+width: 30px;
+
+position:absolute;
+border-radius: 10px;
+background-color: black;
+color: white;
+}
+#subtract
+{
+margin-left: 110px;
+height: 30px;
+width: 30px;
+
+position:absolute;
+border-radius: 10px;
+background-color: black;
+color: white;
+
+}
+#save
+{
+position:absolute;
+right: 10px;
+height: 30px;
+width: 60px;
+
+
+border-radius: 10px;
+background-color: black;
+color: white;
+
+
+
+}
+#color
+{
+position:absolute;
+right:80px;
+width:300px;
+
+height:30px;
+
+}
+.col
+{
+width:35px;
+height:35px;
+}
+#white
+{
+background:white;
+}
+#black
+{
+background:black;
+}
+#red
+{
+background:red;
+}
+#green
+{
+background:green;
+}
+#blue
+{
+background:blue;
+}
+#orange
+{
+background:orange;
+}
+#yellow
+{
+background:yellow;
+}
+#clear
+{
+position:absolute;
+right: 410px;
+height: 30px;
+width: 60px;
+
+
+border-radius: 10px;
+background-color: black;
+color: white;
+
+}
+#fill
+{
+position:absolute;
+right: 485px;
+height: 30px;
+width: 60px;
+
+
+border-radius: 10px;
+background-color: black;
+color: white;
+}
+#pretty
+{
+position:absolute;
+right: 560px;
+height: 30px;
+width: 60px;
+
+
+border-radius: 10px;
+background-color: black;
+color: white;
+	
+}
+</style>
+ 	<title> Drawing </title>
+ 	</head>
+ 	<body style='margin:0'>
+ 	<div id="tb">
+ 	<button id="add" > - </button>
+   <span id="val"> 10 </span>
+ 	<button id="subtract"> + </button>
+ 	<button id="save" onclick="uploadEx()" value="Upload">Save</button>
+ 	<div id="color">
+	<button id="white" class="col" onclick="change(id)"> </button> 
+	<button id="black" class="col" onclick="change(id)"> </button>
+	<button id="red" class="col" onclick="change(id)"> </button>
+	<button id="green" class="col" onclick="change(id)"> </button>
+	<button id="blue" class="col" onclick="change(id)"> </button>
+ 	<button id="orange" class="col" onclick="change(id)"> </button>
+	<button id="yellow" class="col" onclick="change(id)"> </button>
+	</div>
+	<button id="clear" onclick="clearit()">
+	
+	Clear
+	</button>
+	<button id="fill" onclick="fillit()"> Fill
+	</button>
+ 	<button id="pretty" onclick="shadowit()" ondblclick="unshadowit()"> Spray
+	</button>
+	
+	</div>
+	
+ 	
+ 	<canvas id="canvas">
+ 	Hopefully this doesn't turn up
+ 	</canvas>
+	 <form method="post" accept-charset="utf-8" name="form1">
+            <input name="hidden_data" id='hidden_data' type="hidden"/>
+        </form>
+ 
+        <script src="yay.js">
+            
+        </script>
+ 	<script src="main.js"> </script>
+	
+	<script src="save.js"> </script>
+ 	
+ 	</body>
+ 	</html>
+ 	
